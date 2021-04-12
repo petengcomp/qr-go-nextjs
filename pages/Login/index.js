@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../../styles/Login.module.css'
 
-export function Login(){
+export default function Login(){
     return(
         <div className={styles.loginContainer}>
             <main className={styles.loginMain}>
