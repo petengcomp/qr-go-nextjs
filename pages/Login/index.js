@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import styles from '../styles/Login.module.css'
+import styles from '../../styles/Login.module.css'
 
 export function Login(){
     return(
@@ -10,7 +10,7 @@ export function Login(){
                     <input type="text" placeholder="E-mail" className={styles.loginInput} />
                     <input type="password" placeholder="Senha" className={styles.loginInput} />
                 </section>
-                <Link href='/qrgenerator'>
+                <Link href='/Qrgenerator'>
                 <div className={styles.loginButton}>
                     <img 
                         width="30px" 

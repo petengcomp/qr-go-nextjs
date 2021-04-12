@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { Qrcode } from '../components/Qrcode'
-import { Generatepdf } from '../components/Generatepdf';
+import styles from '../../styles/Home.module.css'
+import { Qrcode } from '../../components/Qrcode'
+import { Generatepdf } from '../../components/Generatepdf';
 
 export default function Qrgenerator() {
   const [textQR, setTextQR] = useState('');
