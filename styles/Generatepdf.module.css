@@ -1,0 +1,25 @@
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.button {
+  box-shadow: -6px -6px 18px rgba(151, 255, 249, 0.13), 6px 2px 15px #000000;
+  border: 0;
+  outline: none;
+  background-color: #2d3142;
+  color: #ffffff;
+  border-radius: 30px !important;
+  font-size: 16pt;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.button:hover {
+  background-color: #212330;
+}

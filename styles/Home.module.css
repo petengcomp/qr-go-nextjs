@@ -1,0 +1,122 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title a {
+  color: #7896b9;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.grid {
+  align-self: center;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90vw;
+  /* min-width: 350px; */
+  box-shadow: -6.22302px -6.22302px 18.6691px rgb(129 255 247 / 13%), 6.22302px 6.22302px 18.6691px #000000;
+}
+
+.inputArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  color: #ffffff;
+}
+
+.qrArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.titleLocale {
+  background-color: initial;
+  outline: none;
+  width: 90%;
+  justify-content: center;
+  height: 50px;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 12pt;
+  border-color: transparent;
+  box-shadow: inset -6px -6px 18px rgb(151 255 249 / 13%), inset 6px 2px 15px #000000;
+  color: #ffffff;
+  border-radius: 24px;
+  resize: none;
+}
+
+.text {
+  margin-top: 3rem;
+  background-color: initial;
+  outline: none;
+  width: 95%;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 12pt;
+  border-color: transparent;
+  box-shadow: inset -6px -6px 18px rgb(151 255 249 / 13%), inset 6px 2px 15px #000000;
+  color: #ffffff;
+  border-radius: 24px;
+  resize: none;
+}
+
+.instructions{
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem;
+  }
+  .grid {
+    flex-direction: column;
+  }
+  .inputArea {
+    width: 100%;
+  }
+  .qrArea {
+    width: 100%;
+  }
+  .instructions{
+    padding: 0;
+  }
+}
