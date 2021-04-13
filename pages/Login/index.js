@@ -18,7 +18,7 @@ export default function Login(){
 
         console.log(response)
 
-        if(response.status === 200){
+        if(response.data.status === 'Ok'){
             router.push('/Qrgenerator')
         }
         else{

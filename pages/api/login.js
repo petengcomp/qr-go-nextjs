@@ -4,7 +4,7 @@ export default (req, res) => {
       res.status(200).json({ status: 'Ok' });;
     }
     else{
-      res.status(500).json({ status: 'Dados incorretos' });;;
+      res.status(200).json({ status: 'Dados incorretos' });;;
     }
   } else {
     res.status(404).json({ name: 'Erro' });
