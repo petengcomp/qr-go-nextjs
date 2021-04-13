@@ -16,6 +16,8 @@ export default function Login(){
             password: password
         })
 
+        console.log(response)
+
         if(response.status === 200){
             router.push('/Qrgenerator')
         }
