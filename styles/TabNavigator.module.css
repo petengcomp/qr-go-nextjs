@@ -1,0 +1,31 @@
+.tabNavigatorContainer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    margin-top: 4rem;
+    width: 150px;
+    height: 100vh;
+    background-color: #2d3142;
+    box-shadow: -6.22302px -6.22302px 18.6691px rgba(129, 255, 247, 0.13), 6.22302px 6.22302px 18.6691px #000000;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ffffff;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tabNavigatorContainer a:hover {
+    cursor: pointer;
+}
+
+.tabNavigatorMap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    box-shadow: -6.22302px -6.22302px 18.6691px rgba(129, 255, 247, 0.13), 6.22302px 6.22302px 18.6691px #000000;
+}

@@ -3,10 +3,13 @@ import Head from 'next/head'
 import styles from '../../styles/Home.module.css'
 import { Qrcode } from '../../components/Qrcode'
 import { Generatepdf } from '../../components/Generatepdf';
+import { FiChevronsRight, FiChevronsLeft } from "react-icons/fi";
+import { TabNavigator } from '../../components/TabNavigator';
 
 export default function Qrgenerator() {
   const [textQR, setTextQR] = useState('');
   const [locale, setLocale] = useState('');
+  const [open, setOpen] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -14,6 +17,24 @@ export default function Qrgenerator() {
         <title>QR code generate</title>
         <link rel="icon" href="/qr.svg" />
       </Head>
+
+      <div onClick={() => setOpen(!open)} className={styles.menu}>
+          {
+            open ? 
+            (<><FiChevronsLeft 
+              color="#ffffff"
+              size={35}
+            />
+            <TabNavigator /></>
+            ) : 
+            <FiChevronsRight 
+              color="#ffffff"
+              size={35}
+            />
+          }
+          
+      </div>
+      
 
       <main className={styles.main}>
         <div className={styles.grid}>
