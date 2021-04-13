@@ -110,6 +110,11 @@
   margin: 1rem;
 }
 
+.menu:hover {
+  cursor: pointer;
+}
+
+
 @media (max-width: 600px) {
   .container {
     padding: 2rem;

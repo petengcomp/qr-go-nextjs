@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
-// import api from '../api/login';
 import axios from 'axios';
 import styles from '../../styles/Login.module.css'
 import { useState } from 'react';
 import Swal from 'sweetalert2'
+import Head from 'next/head';
 
 export default function Login(){
     const router = useRouter()
@@ -15,8 +15,6 @@ export default function Login(){
             login: login,
             password: password
         })
-
-        console.log(response)
 
         if(response.data.status === 'Ok'){
             router.push('/Qrgenerator')
@@ -32,6 +30,10 @@ export default function Login(){
 
     return(
         <div className={styles.loginContainer}>
+            <Head>
+                <title>QR code generate</title>
+                <link rel="icon" href="/qr.svg" />
+            </Head>
             <main className={styles.loginMain}>
                 <h1>QR Gen</h1>
                 <section className={styles.inputSection}>
